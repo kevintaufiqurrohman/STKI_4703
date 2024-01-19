@@ -4,11 +4,11 @@ Sistem temu kembali informasi klastering berita online adalah sistem yang dapat 
 
 - Model dan Alur tahapan Eksperimen: Model yang digunakan dalam sistem ini adalah metode K-Means Clustering, yaitu metode yang dapat mengelompokkan dokumen berita menjadi k klaster berdasarkan jarak antara dokumen dengan centroid (titik pusat) klaster. Alur tahapan eksperimen adalah sebagai berikut:
 
-  1. Melakukan pengumpulan dokumen berita dari web menggunakan web crawler.
-  2. Melakukan pra-pemrosesan dokumen berita, yaitu menghapus karakter non-alfanumerik, menghapus stopword, dan melakukan stemming.
-  3. Melakukan pembobotan dokumen berita menggunakan metode Term Frequency-Inverse Document Frequency (TF-IDF), yaitu metode yang dapat menghitung bobot kata dalam dokumen berdasarkan frekuensi kemunculan kata dalam dokumen dan dalam koleksi dokumen.
-  4. Melakukan klastering dokumen berita menggunakan metode K-Means Clustering, yaitu metode yang dapat mengelompokkan dokumen berita menjadi k klaster berdasarkan jarak antara dokumen dengan centroid (titik pusat) klaster.
-  5. Melakukan Pengukuran menggunakan metode pengukuran kesamaan (cosine similarity) antara dua vektor dalam ruang berdimensi banyak. Cosine similarity mengukur sejauh mana dua vektor mendekati atau menjauhi arah satu sama lain, bukan seberapa panjang vektor tersebut.
-  6. Menampilkan hasil klastering dan peringkasan dokumen berita kepada pengguna.
+1.  Melakukan pengumpulan dokumen berita dari web menggunakan web crawler.
+2. Melakukan pra-pemrosesan dokumen berita, yaitu menghapus karakter non-alfanumerik, menghapus stopword, dan melakukan stemming.
+3. Melakukan pembobotan dokumen berita menggunakan metode Term Frequency-Inverse Document Frequency (TF-IDF), yaitu metode yang dapat menghitung bobot kata dalam dokumen berdasarkan frekuensi kemunculan kata dalam dokumen dan dalam koleksi dokumen.
+4. Melakukan klastering dokumen berita menggunakan metode K-Means Clustering, yaitu metode yang dapat mengelompokkan dokumen berita menjadi k klaster berdasarkan jarak antara dokumen dengan centroid (titik pusat) klaster.
+5. Melakukan Pengukuran menggunakan metode pengukuran kesamaan (cosine similarity) antara dua vektor dalam ruang berdimensi banyak. Cosine similarity mengukur sejauh mana dua vektor mendekati atau menjauhi arah satu sama lain, bukan seberapa panjang vektor tersebut.
+6. Menampilkan hasil klastering dan peringkasan dokumen berita kepada pengguna.
 
 - Performa Model / Uji Performa Model: Performa model dapat diukur dengan menggunakan metrik Recall, Precision, dan F-Measure, yaitu metrik yang dapat menghitung seberapa baik sistem dapat menemukan informasi yang relevan dan menghindari informasi yang tidak relevan. Uji performa model dilakukan dengan menggunakan 10 query yang dimasukkan ke dalam sistem, dan dibandingkan dengan hasil manual. Hasil uji performa model menunjukkan bahwa hasil yang optimal pada sistem pencarian sebesar Recall 71%, Precision 65.82%, F-Measure 66.35% dan pada sistem peringkasan sebesar Recall 37.3%, Precision 18%, F-Measure 19.2%.
